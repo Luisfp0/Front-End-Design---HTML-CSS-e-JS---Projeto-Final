@@ -418,6 +418,26 @@ p, label {
         font-size: 32px;
     }
 
+    .jl-slider-container {
+        background-color: white;
+        display: block;
+        overflow: hidden;
+    }
+
+    .jl-slider-list {
+        width: auto;
+        height: 700px;
+        display: block;
+        background-color: deeppink;
+        list-style: none;
+    }
+
+    .jl-slider-item {
+        display: block;
+        height: 180px;
+        float: left;
+    }
+
     .jl-items-counter {
         font-family: 'Open Sans', sans-serif;
         color: #4d4c4c;
@@ -679,6 +699,27 @@ p, label {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.green {
+    background-color: green;
+}
+
 
 
 
