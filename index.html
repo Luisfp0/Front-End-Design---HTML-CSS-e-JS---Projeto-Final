@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="Css/main.css" />
+    <title>João Lemom - UX/UI Designer</title>
+  </head>
+  <body>
+    <div class="jl-preloader">
+      <div class="jl-preloader-inner">
+        <img src="Images/lemon-loader.svg" />
+        <p class="jl-text-light jl-mar-top-15">
+          Aguarde um pouquinho .. Estou preparando a limonada
+        </p>
+      </div>
+    </div>
+
+    <div class="jl-overlay jl-toggle-modal"></div>
+
+    <div class="jl-modal jl-bg-black" id="jl-modal-orcamento">
+      <div class="jl-modal-header">
+        <h1 class="jl-tittle jl-text-green">Solicite um orçamento</h1>
+
+        <button class="jl-close-modal jl-toggle-modal">X</button>
+      </div>
+
+      <div class="jl-modal-body">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="jl-text-light">
+              Por favor informe os dados abaixo e eu entrarei em contato com
+              você o mais breve possível.
+            </p>
+          </div>
+        </div>
+        <div class="row jl-mar-top-15">
+          <div class="col-sm-12">
+            <form class="jl-form">
+              <div class="row">
+                <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                  <label for="Nome" class="jl-text-light">Nome</label>
+                  <input
+                    type="text"
+                    name="Nome"
+                    id="jl-nome"
+                    class="jl-field"
+                  />
+                </div>
+                <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                  <label for="Email" class="jl-text-light">Email</label>
+                  <input
+                    type="email"
+                    name="Email"
+                    id="jl-email"
+                    class="jl-field"
+                  />
+                </div>
+                <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                  <label for="Telefone" class="jl-text-light">Telefone</label>
+                  <input
+                    type="tel"
+                    name="Telefone"
+                    id="jl-telefone"
+                    class="jl-field"
+                  />
+                </div>
+                <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                  <label for="Site" class="jl-text-light">Site</label>
+                  <input
+                    type="text"
+                    name="Site"
+                    id="jl-site"
+                    class="jl-field"
+                  />
+                </div>
+                <div class="col-sm-12 col-md-12 jl-mar-top-15 jl-mar-bottom-15">
+                  <label for="Mensagem" class="jl-text-light"
+                    >Descreva abaixo o projeto no qual você precisa de
+                    orçamento:</label
+                  >
+                  <textarea
+                    id="jl-mensagem"
+                    name="Mensagem"
+                    rows="8"
+                    class="jl-textarea"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row justify-content-end jl-mar-top-15">
+                <div class="col-sm-12 col-md-6">
+                  <button class="jl-btn jl-btn-large jl-btn-green jl-btn-block">
+                    enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="jl-topbar">
+      <div class="jl-logo">
+        <img src="Images/logo.svg" alt="Logo João Lemom UX/UI Designer" />
+      </div>
+
+      <nav class="jl-menu">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Sobre</a>
+      </nav>
+    </header>
+
+    <div class="jl-contact-info jl-bg-black jl-text-light">
+      <div class="jl.contact-info-inner">
+        <h2 class="jl-title jl-text-green">Contato</h2>
+        <p>hello@joaolemon.com</p>
+        <p>+55 62 9 9322 2660</p>
+        <div class="jl-social-links">
+          <a href="#" class="jl-social">
+            <img src="Images/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" class="jl-social">
+            <img src="Images/icon-twitter.svg" alt="Twitter" />
+          </a>
+          <a href="#" class="jl-social">
+            <img src="Images/icon-dribbble.svg" alt="Dribbble" />
+          </a>
+        </div>
+      </div>
+      <div class="jl-corner"></div>
+    </div>
+
+    <button class="jl-btn-contact"></button>
+
+    <div class="jl-page-wrapper">
+      <section class="jl-full-height jl-first-section" id="jl-home-presentation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-md-3 offset-md-2 jl-display-text">
+              <h1 class="jl-title jl-text-green jl-title-big">Olá !</h1>
+              <p class="jl-text-light">
+                Meu Nome é <span class="jl-text-green">João Lemon</span>, sou
+                designer de <span class="jl-text-green">UX e UI.</span> Nulla
+                vulputate, ex jkasdkja, asjdaksjda djas kjaskdasoi iaosdjaksd
+                ajsdkjad
+              </p>
+              <button class="jl-btn jl-btn-medium jl-btn-green jl-mar-top-15 jl-toggle-modal">
+                  solicite um orçamento
+              </button>
+            </div>
+          </div>
+          <div class="jl-scroll-down">
+            <div class="jl-arrow-down">
+              <img src="Images/arrow-down.svg" alt="Role a Página" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="jl-full-height" id="jl-home-portfolio">
+        <div class="container-fluid jl-no-padding">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="jl-portfolio-navigator">
+                  <div class="jl-navigator-counter">
+                    <span class="jl-text-green">01</span>
+                  </div>
+                <nav class="jl-item-navigator">
+                    <a href="#" class="jl-item-active"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </nav>
+                <div class="jl-items-next-prev jl-no-radius-left ">
+                  <div class="jl-item-prev">
+                    <ion-icon name="caret-back-outline"></ion-icon>
+                  </div>
+
+                    <div class="jl-items-counter">
+                      <span>01</span>/<span>05</span>
+                    </div>
+
+                  <div class="jl-item-next">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-10">
+              <div class="jl-slider-container jl-full-height">
+                <ul class="jl-slider-list">
+                  <li class="jl-slider-item red">
+                    
+                  </li>
+                  <li class="jl-slider-item yellow">
+
+                  </li>
+                  <li class="jl-slider-item blue" >
+
+                  </li>
+                  <li class="jl-slider-item purple">
+
+                  </li>
+                  <li class="jl-slider-item green">
+
+                  </li>
+                </ul>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script>src ='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js';</script>
+    <script src="JS/anime.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
