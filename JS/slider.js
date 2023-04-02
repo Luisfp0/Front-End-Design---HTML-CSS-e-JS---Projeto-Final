@@ -11,6 +11,7 @@ var nextItem = document.querySelector('.jl-item-next');
 var sliderPos = 0;
 var currentSlide = document.querySelector ('.jl-current-slide');
 var totalSlide = document.querySelector ('.jl-total-slide');
+var currentCounter = 1;
 
 
 
@@ -74,14 +75,36 @@ var counterFormatter = function (n) {
     }
 }
 
+//Counter ADD
+
+var counterAdd = function (){
+  if (currentCounter >= 0 && currentCounter < sliderTotalItems) {
+   currentCounter++;
+   currentSlide.innerHTML = counterFormatter(currentCounter);
+  }
+}
+
+//Counter Remove
+
+var counterRemove = function () {
+  if (currentCounter > 1 && currentCounter <= sliderTotalItems) {
+   currentCounter--;
+   currentSlide.innerHTML = counterFormatter(currentCounter);
+  }
+}
+
+
+
 //Actions
 totalSlide.innerHTML = counterFormatter (sliderTotalItems);
 
 
 nextItem.addEventListener('click', function() {
   nextSlideAnim();
+  counterAdd();
 });
 
 prevItem.addEventListener('click', function() {
   prevSlideAnim();
+  counterRemove();
 });
