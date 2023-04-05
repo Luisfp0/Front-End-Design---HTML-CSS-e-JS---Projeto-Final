@@ -392,7 +392,6 @@ p, label {
     }
 
     .jl-item-navigator a.jl-item-active {
-        width: 90px;
         background-color: #2ccb69;
     }
 
@@ -719,13 +718,3 @@ p, label {
 .green {
     background-color: green;
 }
-
-
-
-
-
-
-
-
-
-
