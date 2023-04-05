@@ -92,9 +92,19 @@ var counterRemove = function () {
 
 var setActiveNav = function () {
   for (var nv = 0; nv < navItems.length; nv++) {
-    let myNavNum = navItems[nv].getAttribute('data-nav');
-    console.log(myNavNum);
+    let myNavNum = parseInt(navItems[nv].getAttribute('data-nav'));
+    if (myNavNum === currentCounter) {
+      navItems[nv].classList.add('jl-item-active');
+    }
   }
+};
+
+var changeActive = function () {
+  for (var rm = 0; rm < navItems.length; rm++) {
+    navItems[rm].classList.remove('jl-item-active');
+  }
+
+  setActiveNav();
 };
 
 //Actions
@@ -103,10 +113,11 @@ totalSlide.innerHTML = counterFormatter(sliderTotalItems);
 nextItem.addEventListener('click', function () {
   nextSlideAnim();
   counterAdd();
-  setActiveNav();
+  changeActive();
 });
 
 prevItem.addEventListener('click', function () {
   prevSlideAnim();
   counterRemove();
+  changeActive();
 });
