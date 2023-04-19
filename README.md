@@ -3,3 +3,19 @@
 <p align="center">
   <img align="center" src='https://user-images.githubusercontent.com/122934447/233188808-2a84ec7f-13d3-4cde-9bb4-5d5764533220.png'/>
 </p>
+
+## :airplane:Tecnologias usadas no projeto
+
+- HTML
+- CSS
+- Javascript
+- Vercel
+
+## :memo:Acesso ao projeto
+
+O site está rodando na Vercel, é só clicar [:link:aqui](https://curso-de-js-para-react-xqgj-9kqmrso18-luisfp0.vercel.app/).
+
+## :bulb:Sobre o curso
+
+  O curso é muito completo, vemos coisas básicas como estrutura do HTML, utilização de classe, id com css e comandos básicos em Javascript. Chegando no projeto final aplicamos tudo que aprendemos para fazer um site portfolio responsivo, usando de tudo um pouco para aplicar tudo que foi passado. <br>
+  É possível acessa-lo por [:link:aqui](https://www.udemy.com/course/front-end-essencial/).
